@@ -1,0 +1,73 @@
+.functionality-table
+  position: relative
+  font-size: 1.5rem
+  width: 100%
+  border-collapse: collapse
+  &+.functionality-table
+    margin-top: 3.2rem
+  caption
+    position: absolute
+    top: 1.6rem
+    left: 1.6rem
+    color: $white
+    font-weight: 600
+  thead
+    background-color: $blue
+    color: $white
+    font-weight: 600
+  tbody
+    background-color: $white
+    td
+      border-bottom: 2px solid $blue-shade-10
+  td
+    padding: 1.6rem
+    &:first-child
+      font-weight: 600
+      width: 40%
+  .no
+    fill: $blue-shade-30
+  .si
+    fill: $blue
+
+  @include until(751px)
+    &+.functionality-table
+      margin-top: 6.4rem
+    caption
+      color: $black
+      top: -3.2rem
+      left: 0
+      font-size: 1.8rem
+    thead
+      position: absolute
+      left: -9999rem
+    tbody, tr, td
+      display: block
+    td
+      width: 100%
+      padding-left: 40%
+      position: relative
+      text-align: center
+    td:first-child
+      width: 100%
+      background: $blue
+      color: $white
+    td::before
+      position: absolute
+      left: 1.6rem
+      top: 50%
+      transform: translateY(-50%)
+      display: block
+      font-weight: 600
+    td:nth-of-type(1)::before
+      content: ''
+    td:nth-of-type(2)::before
+      content: 'Basic'
+    td:nth-of-type(3)::before
+      content: 'Professional'
+    td:nth-of-type(4)::before
+      content: 'Business'
+    td:nth-of-type(5)::before
+      content: 'Enterprise'
+
+
+

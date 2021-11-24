@@ -1,0 +1,30 @@
+.has-tooltip
+  position: relative
+  .tooltip-text
+    visibility: hidden
+    display: block
+    min-width: 15rem
+    max-width: 35rem
+    background-color: $black
+    color: $white
+    text-align: center
+    padding: 5px 0
+    border-radius: 6px
+    position: absolute
+    top: -1rem
+    left: 50%
+    transform: translate(-50%, -100%)
+    z-index: 1
+    &::after
+      content: ''
+      position: absolute
+      top: 100%
+      left: 50%
+      margin-left: -.5rem
+      border-width: .5rem
+      border-style: solid
+      border-color: $black transparent transparent transparent
+
+  &:hover
+    .tooltip-text
+      visibility: visible

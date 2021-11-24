@@ -1,0 +1,29 @@
+.capdamunt
+  display: none
+  @include tablet
+    font-size: 1.5rem
+    font-weight: 400
+    position: fixed
+    z-index: 800
+    bottom: 8.5rem
+    right: -7.5rem
+    transform: rotate(270deg) translateX(-4rem)
+    display: inline-block
+    width: 20rem
+    height: 4rem
+    text-decoration-style: transparent
+    background: $blue
+    color: $white
+    padding: .2rem 1rem
+    transition: all 600ms ease-in-out
+    text-decoration: none
+    &.mostrar
+      opacity: 1
+      transform: rotate(270deg) translateX(0rem)
+    &.amagar
+      opacity: 0
+    &::after
+      content: '\2192'
+      display: inline-block
+      padding-left: .5rem
+      font-size: 2rem

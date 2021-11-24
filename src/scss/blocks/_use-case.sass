@@ -1,0 +1,30 @@
+[data-state='use-case']
+  @include tablet
+    .wrapper
+      max-width: 103.7rem
+      &>.grouped-headings-small-medium
+        padding-top: 5.3rem
+        padding-right: 18.4rem
+        padding-left: 15rem
+
+
+.use-case-content
+  padding: 5.6rem 0 5.6rem 3.7rem
+  position: relative
+  mark
+    position: absolute
+    top: 5.6rem
+    left: -.5rem
+    transform-origin: left top
+    transform: rotate(270deg) translateX(-100%)
+  h1, h2, h3, h4, h5
+    font-size: 2.2rem
+    font-family: $family-primary
+    font-weight: 600
+  p+h1, p+h2, p+h3, p+h4, p+h5, p+h6, ul+h1, ul+h2, ul+h3, ul+h4, ul+h5, ul+h6
+    padding-top: 3.2rem
+  mark+h1, mark+h2, mark+h3, mark+h4, mark+h5, mark+h6, mark+p
+    margin-top: -.5rem
+  @include tablet
+    padding: 5.6rem 15rem
+

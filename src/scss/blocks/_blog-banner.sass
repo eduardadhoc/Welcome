@@ -1,0 +1,31 @@
+.tpl-blog
+  .blog-banner
+    background-color: $lime
+    padding-bottom: 3.8rem
+    .fil-ariadna
+      margin-bottom: 2.6rem
+  .last-post
+    background: $white
+    padding: 6.4rem 2rem
+    max-width: 124rem
+    h2
+      margin-bottom: -1.2rem
+
+  @include tablet
+    .blog-banner
+      padding: 6.8rem 0
+      img
+        width: auto
+        position: absolute
+        right: 0
+        top: 0
+      .fil-ariadna
+        margin-bottom: 6.1rem
+    .wrapper
+      position: relative
+    .last-post
+      padding-right: 55%
+
+  @include desktop
+    .last-post
+      padding-right: 43.9rem

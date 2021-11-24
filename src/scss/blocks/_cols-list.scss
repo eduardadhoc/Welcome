@@ -1,0 +1,88 @@
+/*
+El GAP el controlem amb margin i padding (comentat si volem que el GAP sigui 15), ara el GAP és 32
+*/
+[class^="cols-list-"] {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  // margin-left: -0.75rem;
+  // margin-right: -0.75rem;
+  margin-left: -1.6rem;
+  margin-right: -1.6rem;
+
+  li {
+    flex: none;
+    // padding: .75rem;
+    padding: 1.6rem;
+    width: 100%;
+
+    .box {
+      height: 100%;
+      padding: 1rem;
+    }
+  }
+
+  ::marker {
+    content: "";
+    font-size: 0;
+    /* Safari support is limited to color and font-size. See bug https://bugs.webkit.org/show_bug.cgi?id=204163 */
+  }
+
+  &[data-state="compact"] {
+    li {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
+  }
+}
+
+// 2 columnes
+.cols-list-2 li {
+  @include tablet {
+    width: 50%;
+  }
+}
+
+// 3 columnes
+.cols-list-3 li {
+  @include tablet {
+    width: 33.333%;
+  }
+}
+
+// 4 columnes
+.cols-list-4 li {
+  @include tablet {
+    width: 33.333%;
+  }
+
+  @include desktop {
+    width: 25%;
+  }
+}
+
+// 5 columnes
+.cols-list-5 li {
+  @include desktop {
+    width: 20%;
+  }
+}
+
+//Exceptions
+[data-state="equip"] {
+  .box {
+    img {
+      padding-bottom: 3.2rem;
+      border-bottom: .8rem solid $black;
+      margin-bottom: 1.6rem;
+
+      @include mobile {
+        width: auto;
+      }
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 2.2rem;
+    }
+  }
+}

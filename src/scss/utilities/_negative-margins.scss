@@ -1,0 +1,55 @@
+// Ho fem servir quan necessitem margins negatius
+$sizes: (
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+);
+$positions: (
+  "top",
+  "left",
+  "bottom",
+  "right"
+);
+$negativeSizes: (
+  -1rem,
+  -1.5rem,
+  -2rem,
+  -2.5rem,
+  -3rem,
+  -3.5rem,
+  -4rem,
+);
+$i: 1;
+
+@each $size in $sizes {
+  $sizee: nth($negativeSizes, $i);
+  $i: $i+1;
+
+  .nm-#{$size} {
+    margin: $sizee !important;
+  }
+
+  //si fem servir BULMA Subtituim @media (min-width:768px) per @include tablet
+  @include tablet {
+    .nm-#{$size}-tablet {
+      margin: $sizee !important;
+    }
+  }
+
+  @each $position in $positions {
+    .nm-#{$position}-#{$size} {
+      margin-#{$position}: $sizee !important;
+    }
+
+    //si fem servir BULMA Subtituim @media (min-width:768px) per @include tablet
+    @include tablet {
+      .nm-#{$position}-#{$size}-tablet {
+        margin-#{$position}: $sizee !important;
+      }
+    }
+  }
+}

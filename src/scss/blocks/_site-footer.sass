@@ -1,0 +1,73 @@
+.site-footer
+  background-color: $blue
+  color: $white
+
+
+.logo-footer
+  width: 19.8rem
+  svg
+    width: 19.8rem
+    height: 3.6rem
+    fill: $white
+
+
+.site-footer-colophon
+  padding: 4rem 0
+  background-color: $black
+  color: $white
+  font-size: 1.4rem
+  p + p
+    padding-top: 1.9rem
+
+  .dropdown
+    display: inline-flex
+    position: relative
+    vertical-align: top
+    button
+      background: transparent
+      height: 4rem
+      font-family: $family-primary
+      font-size: 1.5rem
+      color: $white
+      border: 1px solid $white
+      padding-left: 1.4375rem
+      padding-right: calc(0.75em - 1px)
+      padding-top: calc(0.5em - 1px)
+      padding-bottom: calc(0.5em - 1px)
+      position: relative
+      vertical-align: top
+      justify-content: flex-start
+      line-height: 1.5
+      box-shadow: none
+      display: inline-flex
+      border-radius: 0
+      cursor: pointer
+      .icon-language
+        margin-right: 1rem
+    .dropdown-menu
+      position: absolute
+      z-index: 500
+      right: 0
+      bottom: 100%
+      min-width: 19.2rem
+      display: none
+      .dropdown-content
+        background-color: $white
+        border-radius: 1px
+        box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.08)
+        padding-bottom: 0
+        padding-top: 0
+        .dropdown-item
+          text-align: inherit
+          white-space: nowrap
+          width: 100%
+          color: #3d3d3d
+          display: block
+          font-size: 1.4rem
+          line-height: 1.5
+          position: relative
+          padding: 1.6rem
+
+    &.is-active
+      .dropdown-menu
+        display: block

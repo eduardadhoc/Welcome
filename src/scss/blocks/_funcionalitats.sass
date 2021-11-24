@@ -1,0 +1,94 @@
+.swiper-tags
+  padding: 5rem 0 3rem
+  @include desktop
+    margin-bottom: 1.6rem
+  .swiper
+    position: relative
+  .swiper-slide
+    display: inline-flex
+    color: $black
+    font-family: $family-secondary
+    font-weight: 600
+    font-size: 1.5rem
+    padding: 1.2rem 1.8rem
+    border-radius: .7rem
+    width: auto
+    cursor: pointer
+    &.swiper-slide-thumb-active
+      background: $blue
+      color: $white
+  .next, .prev
+    position: absolute
+    z-index: 100
+    top: 50%
+    transform: translateY(-50%)
+    cursor: pointer
+    display: none
+    svg
+      fill: $blue
+    @include tablet
+      display: block
+  .next
+    right: -2rem
+  .prev
+    left: -2rem
+.f-card
+  max-width: 134.4rem
+  background: $white
+  padding: 6rem 3rem
+  @include tablet
+    width: 90%!important
+    padding: 14.6rem 10.4rem 9.6rem 10.4rem
+
+  &.swiper-slide-prev, &.swiper-slide-next
+    opacity: 0.3
+
+.custom-swiper-button-next, .custom-swiper-button-prev
+  position: absolute
+  top: 40%
+  width: 3.6rem
+  height: 3.6rem
+  cursor: pointer
+  z-index: 100
+  @include tablet
+    width: 4.9rem
+    height: 4.9rem
+.custom-swiper-button-next
+  right: 1%
+  @include tablet
+    right: 2%
+  @include desktop
+    right: 5%
+
+.custom-swiper-button-prev
+  left: 5%
+  @include tablet
+    left: 2%
+  @include desktop
+    left: 5%
+
+.swiper-button-disabled
+  opacity: .5
+.swiper-tags .swiper-button-disabled
+  visibility: hidden
+
+.swiper-pagination
+  position: absolute
+  z-index: 100
+  top: 2rem
+  bottom: auto!important
+  left: 3.2rem!important
+  width: auto!important
+  height: auto!important
+  font-family: $family-secondary
+  font-size: 2.4rem
+  font-weight: 600
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 45%, $lime 45%, $lime 86%,rgba(255,255,255,0) 56%)
+  @include tablet
+    top: 9.6rem!important
+    right: 11%!important
+    left: auto!important
+  @include widescreen
+    right: 15%!important
+  @include fullhd
+    right: 20%!important

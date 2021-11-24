@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ca">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Lorem ipsum."/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    {% include "partials/_favicons.njk" %}
+
+    <title>Welcome</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+
+  <body class="has-background-blue has-text-white" itemscope="itemscope" itemtype="https://schema.org/Organization">
+
+    <div class="all-content">
+      {% block content %}{% endblock %}
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../assets/js/bundle.js"></script>
+    <!-- /SCRIPTS -->
+
+  </body>
+</html>

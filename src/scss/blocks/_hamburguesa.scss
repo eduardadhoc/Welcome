@@ -1,0 +1,15 @@
+.hamburger {
+  position: relative;
+  z-index: 9901;
+    @include tablet {
+        display: none;
+    }
+}
+
+.tpl-blog .hamburger {
+  .inner {
+    .bar {
+      background-color: $lila;
+    }
+  }
+}

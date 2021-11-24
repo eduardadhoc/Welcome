@@ -1,0 +1,282 @@
+// Ho fem servir quan necessitem paddings o margins absoluts
+$sizes: (
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  12,
+  l,
+  xl,
+  jumbo
+);
+$positions: (
+  "top",
+  "left",
+  "bottom",
+  "right"
+);
+$percentSizes: (
+  0,
+  1rem,
+  2rem,
+  3rem,
+  4rem,
+  5rem,
+  6rem,
+  7rem,
+  8rem,
+  9rem,
+  10rem,
+  12rem,
+  15rem,
+  30rem,
+  60rem
+);
+$i: 1;
+
+@each $size in $sizes {
+  $sizee: nth($percentSizes, $i);
+  $i: $i+1;
+
+  .p-#{$size} {
+    padding: $sizee !important;
+  }
+  .p-x-#{$size} {
+    padding-left: $sizee !important;
+    padding-right: $sizee !important;
+  }
+  .p-y-#{$size} {
+    padding-top: $sizee !important;
+    padding-bottom: $sizee !important;
+  }
+
+  .m-#{$size} {
+    margin: $sizee !important;
+  }
+  .m-x-#{$size} {
+    margin-left: $sizee !important;
+    margin-right: $sizee !important;
+  }
+  .m-y-#{$size} {
+    margin-top: $sizee !important;
+    margin-bottom: $sizee !important;
+  }
+
+  @each $position in $positions {
+    .p-#{$position}-#{$size} {
+      padding-#{$position}: $sizee !important;
+    }
+
+    .m-#{$position}-#{$size} {
+      margin-#{$position}: $sizee !important;
+    }
+
+  //si fem servir BULMA Subtituim @media (min-width:768px) per @include tablet
+  @include tablet {
+    .p-#{$size}-tablet {
+      padding: $sizee !important;
+    }
+    .p-x-#{$size}-tablet {
+      padding-left: $sizee !important;
+      padding-right: $sizee !important;
+    }
+    .p-y-#{$size}-tablet {
+      padding-top: $sizee !important;
+      padding-bottom: $sizee !important;
+    }
+
+    .m-#{$size}-tablet {
+      margin: $sizee !important;
+    }
+    .m-x-#{$size}-tablet {
+      margin-left: $sizee !important;
+      margin-right: $sizee !important;
+    }
+    .m-y-#{$size}-tablet {
+      margin-top: $sizee !important;
+      margin-bottom: $sizee !important;
+    }
+  }
+
+  //si fem servir BULMA Subtituim @media (max-width:768px) per @include touch
+  @include touch {
+    .p-#{$size}-touch {
+      padding: $sizee !important;
+    }
+    .p-x-#{$size}-touch {
+      padding-left: $sizee !important;
+      padding-right: $sizee !important;
+    }
+    .p-y-#{$size}-touch {
+      padding-top: $sizee !important;
+      padding-bottom: $sizee !important;
+    }
+
+    .m-#{$size}-touch {
+      margin: $sizee !important;
+    }
+    .m-x-#{$size}-touch {
+      margin-left: $sizee !important;
+      margin-right: $sizee !important;
+    }
+    .m-y-#{$size}-touch {
+      margin-top: $sizee !important;
+      margin-bottom: $sizee !important;
+    }
+  }
+
+
+
+    //si fem servir BULMA Subtituim @media (min-width:----) per @include mobile
+    @include mobile {
+
+      .p-#{$size}-mobile {
+        padding: $sizee !important;
+      }
+      .p-x-#{$size}-mobile {
+        padding-left: $sizee !important;
+        padding-right: $sizee !important;
+      }
+      .p-y-#{$size}-mobile {
+        padding-top: $sizee !important;
+        padding-bottom: $sizee !important;
+      }
+
+      .m-#{$size}-mobile {
+        margin: $sizee !important;
+      }
+      .m-x-#{$size}-mobile {
+        margin-left: $sizee !important;
+        margin-right: $sizee !important;
+      }
+      .m-y-#{$size}-mobile {
+        margin-top: $sizee !important;
+        margin-bottom: $sizee !important;
+      }
+
+      .p-#{$position}-#{$size}-mobile {
+        padding-#{$position}: $sizee !important;
+      }
+
+      .m-#{$position}-#{$size}-mobile {
+        margin-#{$position}: $sizee !important;
+      }
+    }
+
+    //si fem servir BULMA Subtituim @media (min-width:768px) per @include tablet
+    @include tablet {
+
+      .p-#{$size}-tablet {
+        padding: $sizee !important;
+      }
+      .p-x-#{$size}-tablet {
+        padding-left: $sizee !important;
+        padding-right: $sizee !important;
+      }
+      .p-y-#{$size}-tablet {
+        padding-top: $sizee !important;
+        padding-bottom: $sizee !important;
+      }
+
+      .m-#{$size}-tablet {
+        margin: $sizee !important;
+      }
+      .m-x-#{$size}-tablet {
+        margin-left: $sizee !important;
+        margin-right: $sizee !important;
+      }
+      .m-y-#{$size}-tablet {
+        margin-top: $sizee !important;
+        margin-bottom: $sizee !important;
+      }
+
+      .p-#{$position}-#{$size}-tablet {
+        padding-#{$position}: $sizee !important;
+      }
+
+      .m-#{$position}-#{$size}-tablet {
+        margin-#{$position}: $sizee !important;
+      }
+    }
+
+    //si fem servir BULMA Subtituim @media (max-width:768px) per @include touch
+    @include touch {
+
+      .p-#{$size}-touch {
+        padding: $sizee !important;
+      }
+      .p-x-#{$size}-touch {
+        padding-left: $sizee !important;
+        padding-right: $sizee !important;
+      }
+      .p-y-#{$size}-touch {
+        padding-top: $sizee !important;
+        padding-bottom: $sizee !important;
+      }
+
+      .m-#{$size}-touch {
+        margin: $sizee !important;
+      }
+      .m-x-#{$size}-touch {
+        margin-left: $sizee !important;
+        margin-right: $sizee !important;
+      }
+      .m-y-#{$size}-touch {
+        margin-top: $sizee !important;
+        margin-bottom: $sizee !important;
+      }
+
+      .p-#{$position}-#{$size}-touch {
+        padding-#{$position}: $sizee !important;
+      }
+
+      .m-#{$position}-#{$size}-touch {
+        margin-#{$position}: $sizee !important;
+      }
+    }
+
+    //si fem servir BULMA Subtituim @media (min-width:----) per @include desktop
+    @include desktop {
+
+      .p-#{$size}-desktop {
+        padding: $sizee !important;
+      }
+      .p-x-#{$size}-desktop {
+        padding-left: $sizee !important;
+        padding-right: $sizee !important;
+      }
+      .p-y-#{$size}-desktop {
+        padding-top: $sizee !important;
+        padding-bottom: $sizee !important;
+      }
+
+      .m-#{$size}-desktop {
+        margin: $sizee !important;
+      }
+      .m-x-#{$size}-desktop {
+        margin-left: $sizee !important;
+        margin-right: $sizee !important;
+      }
+      .m-y-#{$size}-desktop {
+        margin-top: $sizee !important;
+        margin-bottom: $sizee !important;
+      }
+
+      .p-#{$position}-#{$size}-desktop {
+        padding-#{$position}: $sizee !important;
+      }
+
+      .m-#{$position}-#{$size}-desktop {
+        margin-#{$position}: $sizee !important;
+      }
+    }
+
+  }
+}

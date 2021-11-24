@@ -1,0 +1,50 @@
+.testimonial-slider-container
+  background-color: $lila
+  color: $white
+  padding: 9rem 0
+  .title-big
+    margin-bottom: 2rem
+  blockquote
+    margin: 3.1rem 0 3.9rem
+    &::before
+      content: '\201C'
+    &::after
+      content: '\201D'
+  dl
+    margin-bottom: 6.1rem
+    dt
+      margin-bottom: .7rem
+
+  .testimonial-slider
+    cursor: grab
+
+  .slick-dots
+    display: flex
+    li + li
+      margin-left: 1rem
+    button
+      width: 3.3rem
+      height: .4rem
+      background: $white
+      border: none
+      .slick-dot-icon, .slick-sr-only
+        position: absolute
+        left: -1000rem
+        top: auto
+        width: 1px
+        height: 1px
+        overflow: hidden
+    .slick-active
+      button
+        background: $blue
+  @include tablet
+    padding: 11rem 0
+    .wrapper
+      display: flex
+      position: relative
+      &>div:first-child
+        width:50%
+      .title-big
+        max-width: 30rem
+      .testimonial-slider
+        width: 50%

@@ -1,0 +1,13 @@
+// Per aplicar sticky-footer necessitem que tot el contingut de la pàgina estigui dins .all-content i el .site-footer a continuació. En aquest cas, com que a més usem accessible-modal hem d'aplicar-hi les mateixes propietats que a body
+
+body
+  display: flex
+  flex-direction: column
+  #js-modal-page
+    height: 100%
+    display: flex
+    flex-direction: column
+  .all-content
+    flex: 1 0 auto
+  .site-footer
+    flex-shrink: 0

@@ -1,0 +1,25 @@
+.error404
+  background: $blue
+  color: $white
+  font-family: $family-secondary
+  h1
+    font-size: 10rem
+    font-weight: 600
+  .buttons
+    display: flex
+    .button
+      height: auto
+      min-height: 5rem
+  @include tablet
+    h1
+      font-size: 15rem
+  @include desktop
+    h1
+      font-size: 20rem
+  @include widescreen
+    h1
+      font-size: 30rem
+
+
+
+

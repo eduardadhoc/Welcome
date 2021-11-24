@@ -1,0 +1,36 @@
+.single-testimonial
+  background-color: $lime
+  width: 95%
+  margin-right: 0
+  margin-left: auto
+  .wrapper
+    padding: 6.4rem 4rem
+  .title-big
+    margin-bottom: 2rem
+  blockquote
+    margin: 3.1rem 0 3.9rem
+    &::before
+      content: '\201C'
+    &::after
+      content: '\201D'
+  dt
+    margin-bottom: .7rem
+
+  @include tablet
+    background: linear-gradient(to left,  $lime 0%,$lime 50%, transparent 50%)
+    width: 100%
+    margin: auto
+    .wrapper
+      padding: 8rem 15rem
+      position: relative
+      &::after
+        content: ''
+        display: block
+        width: 10.7rem
+        height: 9.1rem
+        background: url(/assets/img/quote.png)
+        position: absolute
+        right: 0
+        top: -3rem
+
+

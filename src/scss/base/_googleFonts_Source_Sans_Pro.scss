@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display:swap;
+  src: url(assets/fonts/Source-Sans-Pro-normal-300.ttf) format('truetype'), url(assets/fonts/Source-Sans-Pro-normal-300.woff) format('woff'), url(assets/fonts/Source-Sans-Pro-normal-300.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display:swap;
+  src: url(assets/fonts/Source-Sans-Pro-normal-400.eot);
+  src: local('Source Sans Pro'), url(assets/fonts/Source-Sans-Pro-normal-400.ttf) format('truetype'), url(assets/fonts/Source-Sans-Pro-normal-400.svg#SourceSansPro) format('svg'), url(assets/fonts/Source-Sans-Pro-normal-400.eot?#iefix) format('embedded-opentype'), url(assets/fonts/Source-Sans-Pro-normal-400.woff) format('woff'), url(assets/fonts/Source-Sans-Pro-normal-400.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display:swap;
+  src: url(assets/fonts/Source-Sans-Pro-normal-600.ttf) format('truetype'), url(assets/fonts/Source-Sans-Pro-normal-600.woff) format('woff'), url(assets/fonts/Source-Sans-Pro-normal-600.woff2) format('woff2');
+}
+

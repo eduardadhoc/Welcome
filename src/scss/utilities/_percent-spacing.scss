@@ -1,0 +1,236 @@
+// Ho fem servir quan necessitem paddings o margins percentuals
+$sizes: (
+  0,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  15,
+  20,
+  25,
+  30,
+  35,
+  40,
+  45,
+  50
+);
+$positions: (
+  "top",
+  "left",
+  "bottom",
+  "right"
+);
+$percentSizes: (
+  0,
+  5%,
+  6%,
+  7%,
+  8%,
+  9%,
+  10%,
+  15%,
+  20%,
+  25%,
+  30%,
+  35%,
+  40%,
+  45%,
+  50%
+);
+$i: 1;
+
+@each $size in $sizes {
+  $sizee: nth($percentSizes, $i);
+  $i: $i+1;
+
+  .pp-#{$size} {
+    padding: $sizee !important;
+  }
+  .pp-x-#{$size} {
+    padding-left: $sizee !important;
+    padding-right: $sizee !important;
+  }
+  .pp-y-#{$size} {
+    padding-top: $sizee !important;
+    padding-bottom: $sizee !important;
+  }
+
+  .pm-#{$size} {
+    margin: $sizee !important;
+  }
+  .pm-x-#{$size} {
+    margin-left: $sizee !important;
+    margin-right: $sizee !important;
+  }
+  .pm-y-#{$size} {
+    margin-top: $sizee !important;
+    margin-bottom: $sizee !important;
+  }
+
+  //si fem servir BULMA Subtituim @media (min-width:----) per @include mobile
+  @include mobile {
+    .pp-#{$size}-mobile {
+      padding: $sizee !important;
+    }
+    .pp-x-#{$size}-mobile {
+      padding-left: $sizee !important;
+      padding-right: $sizee !important;
+    }
+    .pp-y-#{$size}-mobile {
+      padding-top: $sizee !important;
+      padding-bottom: $sizee !important;
+    }
+
+    .pm-#{$size}-mobile {
+      margin: $sizee !important;
+    }
+    .pm-x-#{$size}-mobile {
+      margin-left: $sizee !important;
+      margin-right: $sizee !important;
+    }
+    .pm-y-#{$size}-mobile {
+      margin-top: $sizee !important;
+      margin-bottom: $sizee !important;
+    }
+  }
+
+  //si fem servir BULMA Subtituim @media (min-width:768px) per @include tablet
+  @include tablet {
+    .pp-#{$size}-tablet {
+      padding: $sizee !important;
+    }
+    .pp-x-#{$size}-tablet {
+      padding-left: $sizee !important;
+      padding-right: $sizee !important;
+    }
+    .pp-y-#{$size}-tablet {
+      padding-top: $sizee !important;
+      padding-bottom: $sizee !important;
+    }
+
+    .pm-#{$size}-tablet {
+      margin: $sizee !important;
+    }
+    .pm-x-#{$size}-tablet {
+      margin-left: $sizee !important;
+      margin-right: $sizee !important;
+    }
+    .pm-y-#{$size}-tablet {
+      margin-top: $sizee !important;
+      margin-bottom: $sizee !important;
+    }
+  }
+
+  //si fem servir BULMA Subtituim @media (max-width:768px) per @include touch
+  @include touch {
+    .pp-#{$size}-touch {
+      padding: $sizee !important;
+    }
+    .pp-x-#{$size}-touch {
+      padding-left: $sizee !important;
+      padding-right: $sizee !important;
+    }
+    .pp-y-#{$size}-touch {
+      padding-top: $sizee !important;
+      padding-bottom: $sizee !important;
+    }
+
+    .pm-#{$size}-touch {
+      margin: $sizee !important;
+    }
+    .pm-x-#{$size}-touch {
+      margin-left: $sizee !important;
+      margin-right: $sizee !important;
+    }
+    .pm-y-#{$size}-touch {
+      margin-top: $sizee !important;
+      margin-bottom: $sizee !important;
+    }
+  }
+
+  //si fem servir BULMA Subtituim @media (min-width:768px) per @include desktop
+  @include desktop {
+    .pp-#{$size}-desktop {
+      padding: $sizee !important;
+    }
+    .pp-x-#{$size}-desktop {
+      padding-left: $sizee !important;
+      padding-right: $sizee !important;
+    }
+    .pp-y-#{$size}-desktop {
+      padding-top: $sizee !important;
+      padding-bottom: $sizee !important;
+    }
+
+    .pm-#{$size}-desktop {
+      margin: $sizee !important;
+    }
+    .pm-x-#{$size}-desktop {
+      margin-left: $sizee !important;
+      margin-right: $sizee !important;
+    }
+    .pm-y-#{$size}-desktop {
+      margin-top: $sizee !important;
+      margin-bottom: $sizee !important;
+    }
+  }
+
+
+
+  @each $position in $positions {
+    .pp-#{$position}-#{$size} {
+      padding-#{$position}: $sizee !important;
+    }
+
+    .pm-#{$position}-#{$size} {
+      margin-#{$position}: $sizee !important;
+    }
+
+    //si fem servir BULMA Subtituim @media (min-width:---) per @include mobile
+    @include mobile {
+      .pp-#{$position}-#{$size}-mobile {
+        padding-#{$position}: $sizee !important;
+      }
+
+      .pm-#{$position}-#{$size}-mobile {
+        margin-#{$position}: $sizee !important;
+      }
+    }
+
+    //si fem servir BULMA Subtituim @media (min-width:768px) per @include tablet
+    @include tablet {
+      .pp-#{$position}-#{$size}-tablet {
+        padding-#{$position}: $sizee !important;
+      }
+
+      .pm-#{$position}-#{$size}-tablet {
+        margin-#{$position}: $sizee !important;
+      }
+    }
+
+    //si fem servir BULMA Subtituim @media (max-width:768px) per @include touch
+    @include touch {
+      .pp-#{$position}-#{$size}-touch {
+        padding-#{$position}: $sizee !important;
+      }
+
+      .pm-#{$position}-#{$size}-touch {
+        margin-#{$position}: $sizee !important;
+      }
+    }
+
+    //si fem servir BULMA Subtituim @media (min-width:768px) per @include desktop
+    @include desktop {
+      .pp-#{$position}-#{$size}-desktop {
+        padding-#{$position}: $sizee !important;
+      }
+
+      .pm-#{$position}-#{$size}-desktop {
+        margin-#{$position}: $sizee !important;
+      }
+    }
+
+  }
+}

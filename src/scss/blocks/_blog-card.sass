@@ -1,0 +1,27 @@
+.post-card
+  background: $white
+  &+.post-card
+    margin-top: 3.2rem
+  .columns
+    margin: 0
+  .column
+    padding: 0
+  .post-card-content
+    padding: 5rem 1.9rem 4.6rem
+  img
+    margin: 0 3.2rem
+    width: calc(100% - 6.4rem)
+
+  @include tablet
+    .post-card-content
+      padding: 4.8rem 14rem 6rem 4.8rem
+    .column:last-child
+      overflow: hidden
+    img
+      margin: 0
+      width: auto
+      max-width: none
+      height: 100%
+      position: relative
+      left: 51%
+      transform: translateX(-50%)

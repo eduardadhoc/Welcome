@@ -1,0 +1,31 @@
+.api-solution
+  &>div
+    @include from($desktop)
+      background: linear-gradient(to right,  $lime 0%,$lime 50%, $code 50%)
+
+
+  @include until($desktop)
+    .columns
+      display: block !important
+    .column
+      display: block !important
+      flex-basis: 0 !important
+      flex-grow: 0 !important
+      flex-shrink: 0 !important
+      width: 100% !important
+      padding: .75rem
+      &+.column
+        padding-top: 8rem !important
+
+  &[data-state='reverse']
+    &>div
+      @include from($desktop)
+        background: linear-gradient(to left,  $white 0%,$white 50%, $code 50%)
+
+    .columns
+      flex-direction: row-reverse
+
+  &.has-background-lime[data-state='reverse']
+    &>div
+      @include from($desktop)
+        background: linear-gradient(to left,  $lime 0%,$lime 50%, $code 50%)

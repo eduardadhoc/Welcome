@@ -1,0 +1,75 @@
+/* Posicionem .price-card--heaer absolutament per no tenir problemes d'alineació de continguts entre les diferents cards. Al fer-ho donem espai a .price-card amb padding-top */
+
+.price-card
+  background-color: $white
+  padding: 38rem 2rem 4.2rem
+  position: relative
+  .grouped-headings-big-medium-secondary
+    position: absolute
+    top: 4.2rem
+    width: calc(100% - 4rem)
+  .button
+    height: 8.2rem
+    justify-content: center
+    width: calc(100% - 4rem)
+
+  @include tablet
+    padding: 38rem 4.2rem 16.6rem 4.2rem
+    .grouped-headings-big-medium-secondary
+      width: calc(100% - 8.4rem)
+    .button
+      position: absolute
+      left: auto
+      bottom: 4.2rem
+      width: calc(100% - 8.4rem)
+
+
+.price
+  position: absolute
+  top: 19rem
+  font-family: $family-secondary
+  font-weight: 600
+  span
+    margin-right: .2rem
+  span:nth-of-type(1)
+    font-size: 7rem
+  span:nth-of-type(2)
+    font-size: 3rem
+    text-transform: uppercase
+  span:nth-of-type(3)
+    font-size: 1.5rem
+    text-transform: uppercase
+    color: #93A7D0
+  p
+    font-family: $family-secondary
+    font-size: 1.5rem
+    font-weight: 600
+
+@media only screen and (min-width: 768px) and (max-width: 1320px)
+  .price
+    span:nth-of-type(1)
+      display: block
+      position: relative
+      top: 1.5rem
+
+@include tablet-only
+  .price-card
+    padding-top: 30rem
+    padding-right: 1rem
+    padding-left: 1rem
+    .title-big
+      font-size: 2.5rem!important
+    .subtitle-medium
+      font-size: 2rem!important
+      line-height: 1
+    .button
+      //height: auto
+      width: calc(100% - 2rem)
+  .price
+    top: 12rem
+    span:nth-of-type(1)
+      font-size: 4rem
+      line-height: 2
+    span:nth-of-type(2)
+      font-size: 2rem
+

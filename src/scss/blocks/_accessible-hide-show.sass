@@ -1,0 +1,39 @@
+.js-to_expand[aria-hidden=true],
+.js-to_expand[data-hidden=true]
+  display: none
+.expandmore__button
+  background: none
+  border: none
+  cursor: pointer
+.expandmore__symbol::before
+  content: '+'
+.expandmore__button[aria-expanded=true] > .expandmore__symbol:before,
+.expandmore__button[data-expanded=true] > .expandmore__symbol:before
+  content: '-'
+
+
+.js-expandmore[data-state="footer"]
+  .expandmore__button
+    font-family: $family-secondary
+    font-weight: $weight-semibold
+    font-size: 1.5rem
+    color: $white
+    width: 100%
+    display: flex
+    flex-direction: row-reverse
+    justify-content: space-between
+    align-items: center
+    padding: 0 0 2.5rem 0
+  .expandmore__symbol::before
+    font-size: 20px
+  @include tablet
+    .expandmore__button
+      cursor: default
+    .expandmore__symbol::before
+      display: none
+
+.js-to_expand[data-state="footer"][aria-hidden="true"],
+.js-to_expand[data-state="footer"][data-hidden="true"]
+  @include tablet
+    display: block
+

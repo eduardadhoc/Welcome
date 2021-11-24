@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@import "base/_googleFonts_Source_Sans_Pro";
+@import "base/_googleFonts_Poppins";
+
+// Variables i Bulma
+@import "variables/_adhoc-initial-variables";
+// @import "../../node_modules/bulma/sass/utilities/initial-variables";
+// @import "../../node_modules/bulma/sass/utilities/functions";
+// @import "../../node_modules/bulma/sass/utilities/derived-variables";
+// @import "../../node_modules/bulma/sass/utilities/mixins";
+// @import "../../node_modules/bulma/sass/utilities/controls";
+// @import "../../node_modules/bulma/sass/utilities/extends";
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+
+//Libraries
+@import "lib/lib";
+
+
+//General
+@import "general/_all";
+
+// Utilities
+@import "utilities/_absolute-spacing";
+//@import "utilities/_base-text";
+//@import "utilities/_base-text-small";
+@import "utilities/_clic";
+@import "utilities/_colors";
+@import "utilities/_external-link";
+@import "utilities/_fila";
+@import "utilities/_flow";
+//@import "utilities/_fluid-iframe";
+//@import "utilities/_headline";
+@import "utilities/_is-clickable";
+//@import "utilities/_is-clipped";
+//@import "utilities/_is-relative";
+//@import "utilities/_jumbo-numbers";
+@import "utilities/_jumbo-title";
+//@import "utilities/_negative-margins";
+//@import "utilities/_nowrap";
+@import "utilities/_percent-spacing";
+@import "utilities/_skip";
+@import "utilities/_subtitle-big";
+@import "utilities/_subtitle-medium";
+@import "utilities/_subtitle-small";
+@import "utilities/_title-big";
+@import "utilities/_title-medium";
+@import "utilities/_title-small";
+//@import "utilities/_title-smallest";
+//@import "utilities/_width";
+@import "utilities/_wrapper";
+
+// Blocks
+@import "blocks/_404";
+//@import "blocks/_about-banner";
+//@import "blocks/_are-steps";
+//@import "blocks/_accessible-accordion";
+//@import "blocks/_accessible-hide-show";
+//@import "blocks/_accessible-modal";
+//@import "blocks/_accessible-tabs";
+//@import "blocks/_api-solution";
+//@import "blocks/_blog-banner";
+//@import "blocks/_blog-card";
+//@import "blocks/_blog-slider";
+@import "blocks/_box-post";
+@import "blocks/_button";
+//@import "blocks/_capdamunt";
+//@import "blocks/_ceo";
+//@import "blocks/_connected-apps";
+//@import "blocks/_connected-apps-slider";
+@import "blocks/_cols-list";
+//@import "blocks/_data";
+//@import "blocks/_erp-slider";
+//@import "blocks/_funcionalitats";
+//@import "blocks/_grouped-headings";
+//@import "blocks/_fil-ariadna";
+//@import "blocks/_functionality-table";
+//@import "blocks/_hamburguesa";
+@import "blocks/_icons";
+@import "blocks/_logo";
+//@import "blocks/_logos";
+//@import "blocks/_logo-certifications";
+@import "blocks/_main-banner";
+//@import "blocks/_operations-map";
+//@import "blocks/_partners-slider";
+//@import "blocks/_partners-slider-container";
+@import "blocks/_popover";
+//@import "blocks/_post-contents";
+//@import "blocks/_prev-next";
+//@import "blocks/_price-card";
+//@import "blocks/_price-group";
+//@import "blocks/_row-with-bg";
+//@import "blocks/_single-testimonial";
+@import "blocks/_site-footer";
+@import "blocks/_site-header";
+@import "blocks/_site-main";
+//@import "blocks/_slider-arrows";
+@import "blocks/_sticky-footer";
+//@import "blocks/_use-case";
+//@import "blocks/_use-case-card";
+//@import "blocks/_use-case-slider";
+@import "blocks/_taula";
+@import "blocks/_tooltips";
+//@import "blocks/_testimonial-slider";
+

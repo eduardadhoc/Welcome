@@ -1,0 +1,50 @@
+.prev-next
+  .columns
+    margin: 0
+    max-width: 102.4rem
+  .column
+    display: flex
+    flex-direction: column
+    padding: 2rem 3rem
+    &:hover
+      background: $lila
+      color: $white
+      svg
+        fill: $white
+    &>div
+      font-weight: 600
+      font-size: 1.5rem
+      margin-bottom: 2.9rem
+    &>a
+      display: flex
+      text-decoration: none
+      text-align: right
+      align-items: center
+      span
+        display: block
+        font-family: $family-secondary
+        font-weight: 600
+        font-size: 2.4rem
+        max-width: 37.5rem
+        flex-shrink: 1
+        flex-grow: 1
+      svg
+        display: none
+        @include tablet
+          display: block
+    &:first-child
+      justify-content: right
+      a
+        justify-content: flex-end
+    &:last-child
+      border-top: 1px solid $lila
+      justify-content: left
+      @include tablet
+        border-top: none
+        border-left: 1px solid $lila
+      a
+        justify-content: flex-start
+        span
+          text-align: left
+
+

@@ -1,0 +1,8 @@
+a {
+  color: inherit;
+
+  &:hover {
+    -webkit-text-decoration-color: transparent;
+            text-decoration-color: transparent;
+  }
+}

@@ -1,0 +1,26 @@
+%logoOpacity
+  opacity: 1
+
+[class*="logo--"]
+  opacity: 0.3
+.logo--stripe:hover,
+.connected-apps-slider .slick-active .logo--stripe
+  @extend %logoOpacity
+  fill: #635BFF
+.logo--sage:hover,
+.connected-apps-slider .slick-active .logo--sage,
+.erp-slider .erp-slider-item .content:hover .logo--sage
+  @extend %logoOpacity
+  fill: #00DC06
+.logo--md:hover,
+.connected-apps-slider .slick-active .logo--md,
+.erp-slider .erp-slider-item .content:hover .logo--md
+  @extend %logoOpacity
+  fill: #00255B
+.logo--sap:hover,
+.connected-apps-slider .slick-active .logo--sap,
+.erp-slider .erp-slider-item .content:hover .logo--sap
+  @extend %logoOpacity
+  fill: #FFB200
+
+

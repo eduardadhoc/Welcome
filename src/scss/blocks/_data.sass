@@ -1,0 +1,16 @@
+.data
+  padding: 8.6rem 0
+  .jumbo-numbers
+    border-bottom: solid .8rem $black
+    padding-bottom: .8rem
+    margin-bottom: 2rem
+    @media only screen and (min-width: 768px) and (max-width: 1200px)
+      font-size: 5rem
+      font-size: 5.8vw
+  @include tablet
+    padding-bottom: 11rem
+  &[data-state="lime-bg"]
+    background: $lime
+    @include desktop
+      background: linear-gradient(to right,  $lime 0%,$lime 85%, $white 85%)
+

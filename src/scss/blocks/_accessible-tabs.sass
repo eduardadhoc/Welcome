@@ -1,0 +1,52 @@
+.js-tablist
+  display: flex
+.js-tablist__item
+  cursor: pointer
+
+.js-tabcontent
+  &[aria-hidden="true"]
+    border: 0
+    clip: rect(0 0 0 0)
+    height: 1px
+    margin: -1px
+    overflow: hidden
+    padding: 0
+    position: absolute
+    width: 1px
+
+[data-state="delegacions"]
+  .js-tablist
+    display: flex
+  .js-tablist__item
+    font-size: 2.2rem
+    font-weight: 600
+    a
+      display: block
+      position: relative
+      opacity: .5
+      padding-bottom: 1.6rem
+      overflow: hidden
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        left: 50%
+        bottom: 0
+        width: 3.6rem
+        height: .3rem
+        background-color: $black
+        transform: translate(-50%, 1.8rem)
+        transition: $transition-bounce
+      &[aria-selected="true"]
+        opacity: 1
+        &::after
+          transform: translate(-50%, 0)
+
+
+    &+.js-tablist__item
+      padding-left: 5%
+
+  .js-tabcontent
+    padding-top: 6.4rem
+    @include desktop
+      padding-right: 10%

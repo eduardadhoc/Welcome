@@ -1,0 +1,385 @@
+{% extends "layout.njk" %}
+{% set pageTitle = "El programa de facturació que connecta amb tots els teus clients i proveïdors" %}
+{% set activePage = "inici" %}
+
+{% block content %}
+
+  <!-- BANNER -->
+  <div class="main-banner has-background-blue has-text-white p-bottom-5-mobile p-bottom-8-tablet">
+    <div class="wrapper">
+      <div>
+        <h1 class="jumbo-title">Enviar factura electrònica a Junta de Andalucía</h1>
+        <p class="subtitle-big">Amb B2Brouter podràs enviar factures electròniques a
+          <strong>Junta de Andalucía</strong>
+          a través de Junta de Andalucía (PUEF) i generar correctament la factura electrònica en format Facturae 3.2 amb els codis DIR3 obligatoris incorporats: Oficina Comptable, Unitat Tramitadora i Òrgan Gestor.</p>
+        <a href="" class="button is-primary">Enviar factura electrònica a la Junta de Andalucía</a>
+      </div>
+    </div>
+  </div>
+  <!-- /BANNER -->
+
+  <main id="main-content" class="site-main">
+
+    <!-- CTA ENVIAR FACTURA -->
+    <div class="wrapper has-background-white m-bottom-3">
+      <div class="columns p-y-5 p-x-3">
+        <div class="column is-8">
+          <h2 class="subtitle-medium">Consulta els codis DIR3 de Generalitat de Catalunya per fer una factura electrònica</h2>
+        </div>
+        <div class="column is-flex is-justify-content-flex-end is-align-items-center">
+          <a href="" class="button is-primary" style="text-align:center">Enviar factura electrònica</a>
+        </div>
+      </div>
+    </div>
+    <!-- /CTA ENVIAR FACTURA -->
+
+    <!-- FITXA -->
+    <div class="wrapper has-background-white p-x-3 p-top-5 p-bottom-3 m-bottom-4" itemprop="organization" itemtype="https://schema.org/Organization">
+
+      <!-- nom i accions -->
+      <div class="level m-bottom-3">
+        <div class="level-left">
+          <div class="level-item">
+            <h3 class="title-medium" itemprop="name">Junta de Andalucía</h3>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item">
+            <a href="" class="button has-tooltip">
+              <span class="tooltip-text">Contacta amb el nostre equip de suport</span>
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#support"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="level-item">
+            <span class="button has-tooltip" id="getlink">
+              <span class="tooltip-text">Copiar URL</span>
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use xlink:href="#share"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- nom i accions -->
+
+      <!-- info -->
+      <div class="columns">
+        <div class="column">
+          <p class="has-text-weight-semibold">Informació bàsica</p>
+          <ul>
+            <li>
+              <span itemprop="taxID">(CIF)</span>:
+              <span itemprop="value">ESS4111001F</span></li>
+            <span itemprop="address" itemscope="itemscope" itemtype="https://schema.org/PostalAddress">
+              <li itemprop="streetAddress">C/ Juan Antonio de Vizarrón, s/n. Edificio Torretriana. Isla de la Cartuja</li>
+              <li>
+                <span itemprop="postalCode">41013</span>
+                <span itemprop="addressLocality">Sevilla</span></li>
+              <li itemprop="addressRegion">Sevilla</li>
+              <li itemprop="addressCountry">Spain</li>
+              <li>
+                <a href="" class="button is-minimal">Veure el mapa</a>
+              </li>
+            </span>
+          </ul>
+        </div>
+        <div class="column flow--15">
+          <dl class="flow">
+            <dt class="has-text-weight-semibold">Mètode de lliurament de factures</dt>
+            <dd>Junta de Andalucía (PUEF) (Facturae 3.2)</dd>
+          </dl>
+          <dl>
+            <dt class="has-text-weight-semibold">Web</dt>
+            <dd>
+              <a href="https://www.juntadeandalucia.es/" target="_blank" itemprop="url">www.juntadeandalucia.es</a>
+            </dd>
+          </dl>
+        </div>
+        <div class="column flow--15">
+          <dl class="flow">
+            <dt class="has-text-weight-semibold">Nota informativa</dt>
+            <dd>Cal informar del número d'expedient a la casella "Num. d'expedient", el format del codi d'expedient ha de ser amb guions i sense espais (XXXX-YYYY-ZZZZZZZ)</dd>
+            <dt class="has-text-weight-semibold">Oficina comptable</dt>
+            <dd>L01080898</dd>
+            <dt class="has-text-weight-semibold">Òrgan gestor</dt>
+            <dd>L01080898</dd>
+            <dt class="has-text-weight-semibold">Unitat tramitadora</dt>
+            <dd>L01080898</dd>
+          </dl>
+        </div>
+      </div>
+      <!-- /info -->
+
+    </div>
+    <!-- /FITXA -->
+
+    <!-- TAULA -->
+    <div class="wrapper">
+      <div class="container-taula">
+        <table class="taula">
+          <thead>
+            <tr>
+              <th>Unitats organitzatives</th>
+              <th>Oficina comptable</th>
+              <th>Òrgan gestor</th>
+              <th>Unitat tramitadora</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+            <tr>
+              <td>Hospital de Viladecans</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+              <td>A09010218</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- /TAULA -->
+
+    <!-- QUÈ ÉS EFACT & DIR3 -->
+    <div class="fila p-y-5-touch p-y-10-desktop">
+      <div class="wrapper">
+        <div class="columns is-variable is-8">
+          <div class="column flow--15">
+            <h3 class="title-small p-bottom-1">
+              <mark class="blue-light">Què és eFACT Catalunya?</mark>
+            </h3>
+            <p>
+              <strong>eFACT Catalunya</strong>
+              és el Punt General d'Entrada de factures electròniques per a les Administracions Públiques catalanes. Tots els proveïdors, empreses o autònoms, hauran de remetre les seves factures electròniques a través d'<strong>eFACT Catalunya</strong>
+              per tal que siguin gestionades per la pertinent Administració Catalana.</p>
+            <p>El format admès per
+              <strong>eFACT Catalunya</strong>
+              és
+              <strong>Facturae 3.2</strong>, amb la obligatorietat d'especificar els codis DIR3.</p>
+            <p>B2Brouter està connectat amb
+              <strong>eFACT Catalunya</strong>, de manera que les teves factures seran enviades al Punt d'Entrada de forma directa i automàtica. D'aquesta manera també podràs estar informat de l'estat de la teva factura mitjançant el nostre sistema de notificacions.</p>
+          </div>
+          <div class="column flow--15">
+            <h3 class="title-small p-bottom-1">
+              <mark class="blue-light">Què és eFACT Catalunya?</mark>
+            </h3>
+            <p>
+              <strong>eFACT Catalunya</strong>
+              és el Punt General d'Entrada de factures electròniques per a les Administracions Públiques catalanes. Tots els proveïdors, empreses o autònoms, hauran de remetre les seves factures electròniques a través d'<strong>eFACT Catalunya</strong>
+              per tal que siguin gestionades per la pertinent Administració Catalana.</p>
+            <p>El format admès per
+              <strong>eFACT Catalunya</strong>
+              és
+              <strong>Facturae 3.2</strong>, amb la obligatorietat d'especificar els codis DIR3.</p>
+            <p>B2Brouter està connectat amb
+              <strong>eFACT Catalunya</strong>, de manera que les teves factures seran enviades al Punt d'Entrada de forma directa i automàtica. D'aquesta manera també podràs estar informat de l'estat de la teva factura mitjançant el nostre sistema de notificacions.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- QUÈ ÉS EFACT & DIR3 -->
+
+    <!-- TAMBÉ POT INTERESSAR -->
+    <div class="fila p-y-5-touch p-y-10-desktop">
+      <div class="wrapper">
+        <ul class="cols-list-4">
+          <li>
+            <div class="box box-post is-clickable">
+              <h4 class="title-small">Enviament de factura electrònica a Europa</h4>
+              <a href="" class="button is-minimal">Seguir llegint</a>
+            </div>
+          </li>
+          <li>
+            <div class="box box-post is-clickable">
+              <h4 class="title-small">Treu el màxim partit a la facturació electrònica</h4>
+              <a href="" class="button is-minimal">Seguir llegint</a>
+            </div>
+          </li>
+          <li>
+            <div class="box box-post is-clickable">
+              <h4 class="title-small">Com enviar una factura electrònica a un Ajuntament</h4>
+              <a href="" class="button is-minimal">Seguir llegint</a>
+            </div>
+          </li>
+          <li>
+            <div class="box box-post is-clickable">
+              <h4 class="title-small">Què és una factura electrònica?</h4>
+              <a href="" class="button is-minimal">Seguir llegint</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /TAMBÉ POT INTERESSAR -->
+
+    <!-- QUÈ ÉS UNA FACTURA ELECTRÒNICA -->
+    <div class="fila p-y-5-touch p-y-10-desktop">
+      <div class="wrapper">
+        <div class="columns">
+          <div class="column flow--15 is-10">
+            <h3 class="title-big p-bottom-5 pp-right-50-desktop">
+              <mark class="lime">Què és una factura electrònica</mark>
+            </h3>
+            <p class="subtitle-medium">Una factura electrònica és un document que té la mateixa validesa legal que una factura en paper, però que s'envia i rep en suport electrònic.</p>
+            <p class="subtitle-medium">La llei 25/2013 regula la factura electrònica a Espanya, especificant els requisits i estàndards que ha de complir. El format més habitual de factura electrònica a nivell internacional és l'XML (amb totes les seves variants) ja que és un format estructurat i estàndard que es processa fàcilment per qualsevol sistema. El format habitual a Espanya és un format XML propi denominat Facturae.</p>
+            <a href="" class="button is-primary m-top-6">Has d'enviar una factura electrònica a Generalitat de Catalunya?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /QUÈ ÉS UNA FACTURA ELECTRÒNICA -->
+
+    <!-- ALTRES USUARIS HAN BUSCAT -->
+    <div class="fila p-y-5-touch p-y-10-desktop">
+      <div class="wrapper">
+        <div class="columns">
+          <div class="column is-one-third">
+            <h3 class="title-big p-bottom-5">
+              <mark class="blue-light">Altres usuaris han buscat</mark>
+            </h3>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-one-third">
+            <ul>
+              <li>
+                <a href="">Ajuntament de Gavà</a>
+              </li>
+              <li>
+                <a href="">Ajuntament d'Olesa de Montserrat</a>
+              </li>
+              <li>
+                <a href="">Ajuntament de Sant Pol de Mar</a>
+              </li>
+              <li>
+                <a href="">AJUNTAMENT DE VILANOVA DEL VALLÈS</a>
+              </li>
+              <li>
+                <a href="">Ajuntament de Cabrera de Mar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column is-one-third">
+            <ul>
+              <li>
+                <a href="">Ajuntament de Gavà</a>
+              </li>
+              <li>
+                <a href="">Ajuntament d'Olesa de Montserrat</a>
+              </li>
+              <li>
+                <a href="">Ajuntament de Sant Pol de Mar</a>
+              </li>
+              <li>
+                <a href="">AJUNTAMENT DE VILANOVA DEL VALLÈS</a>
+              </li>
+              <li>
+                <a href="">Ajuntament de Cabrera de Mar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column is-one-third">
+            <ul>
+              <li>
+                <a href="">Ajuntament de Gavà</a>
+              </li>
+              <li>
+                <a href="">Ajuntament d'Olesa de Montserrat</a>
+              </li>
+              <li>
+                <a href="">Ajuntament de Sant Pol de Mar</a>
+              </li>
+              <li>
+                <a href="">AJUNTAMENT DE VILANOVA DEL VALLÈS</a>
+              </li>
+              <li>
+                <a href="">Ajuntament de Cabrera de Mar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /ALTRES USUARIS HAN BUSCAT -->
+
+    <!-- QUAN ÉS OBLIGATORI UNA FACTURA ELECTRÒNICA -->
+    <div class="fila p-y-5-touch p-y-10-desktop">
+      <div class="wrapper">
+        <div class="columns">
+          <div class="column flow--15 is-10">
+            <h3 class="title-big p-bottom-5 pp-right-50-desktop">
+              <mark class="lime">Quan és obligatori fer una factura electrònica?</mark>
+            </h3>
+            <p class="subtitle-medium">A Espanya la factura electrònica Fés obligatòria des de 2015 per a proveïdors de l'administració pública (Ajuntaments, Governs Regionals, Generalitat, Serveis Sanitaris, Universitats, etc.). Les empreses o autònoms que siguin subcontractistes o contractistes de contractes públics també hauran d'emetre les seves factures en format electrònic a través del sistema FACeB2B.</p>
+            <p class="subtitle-medium">Pel sector públic les factures s’han d’enviar en format format Facturae i les factures electròniques s'han de remetre a través del Punt d'Entrada que corresponqui.</p>
+            <a href="" class="button is-primary m-top-6">Dóna't d'alta al nostre servei de facturació electrònica</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /QUAN ÉS OBLIGATORI UNA FACTURA ELECTRÒNICA -->
+
+  </main>
+
+{% endblock %}

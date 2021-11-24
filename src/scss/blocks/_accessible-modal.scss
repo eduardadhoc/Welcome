@@ -1,0 +1,72 @@
+/* needed for old browsers */
+dialog {
+  display: block;
+}
+
+/* removes scroll when modal is opened */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* overlay covers everything */
+.adhoc-modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 666;
+  background: rgba(0, 0, 0, .8);
+  animation: overlay ease 0.5s 1 normal;
+}
+
+/* modal */
+.adhoc-modal {
+  position: fixed;
+  left: 50%;
+  right: auto;
+  top: 50%;
+  width: 80%;
+  max-width: 50rem;
+  background: #fff;
+  z-index: 667;
+  transform: translate(-50%, -50%);
+  -webkit-animation: apparition ease 0.5s 1 normal;
+  animation: apparition ease 300ms 1 normal;
+
+  &--reverse {
+    position: fixed;
+    left: 50%;
+    right: auto;
+    top: 50%;
+    width: 80%;
+    max-width: 50rem;
+    background: #fff;
+    z-index: 667;
+    transform: translate(-50%, -50%);
+    animation: apparition ease 300ms 1 reverse;
+
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes overlay {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

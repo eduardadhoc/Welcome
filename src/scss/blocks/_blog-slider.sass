@@ -1,0 +1,40 @@
+.blog-slider
+  cursor: grab
+  .slick-arrow
+    display: none !important
+    @include tablet
+      display: block !important
+  .slick-slide
+    max-width: 38.7rem
+    padding: 1.5rem
+  &-contents
+    background-color: $white
+    padding: 3rem 2rem 4.4rem
+    min-height: 36rem
+    position: relative
+    .button
+      position: absolute !important
+      bottom: 4.4rem
+      left: 2rem
+    .title-medium
+      padding-top: 1.6rem
+      max-height: 18rem
+      overflow: hidden
+    @include touch
+        .title-medium
+          font-size: 2.5rem
+
+.blog-slider-left, .blog-slider-right
+  cursor: pointer
+  border: none
+  background-color: transparent
+  .icon
+    transition: $transition-standard
+  span
+    position: absolute
+    left: -1000rem
+    top: auto
+    width: 1px
+    height: 1px
+    overflow: hidden
+

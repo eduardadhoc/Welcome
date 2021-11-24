@@ -1,0 +1,21 @@
+[class*="-slider-left"], [class*="-slider-right"]
+  cursor: pointer
+  border: none
+  background-color: transparent
+  .icon
+    transition: $transition-standard
+  span
+    position: absolute
+    left: -1000rem
+    top: auto
+    width: 1px
+    height: 1px
+    overflow: hidden
+  &:hover
+    svg
+      fill: $blue
+
+.testimonial-slider-left,
+.testimonial-slider-right
+  svg
+    fill: $white

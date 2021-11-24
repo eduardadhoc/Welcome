@@ -1,0 +1,39 @@
+{
+  "name": "Directori",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Simon Padbury",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SimonPadbury/gulp-quickstart"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "autoprefixer": "^10.4.0",
+    "babel": "^6.23.0",
+    "browser-sync": "^2.27.7",
+    "bulma": "^0.9.3",
+    "cssnano": "^4.1.10",
+    "goog-webfont-dl": "^1.0.4",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-image": "^6.2.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pretty-url": "^0.1.1",
+    "gulp-purgecss": "^4.0.3",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uncss": "^1.0.6",
+    "postcss": "^8.3.11"
+  }
+}

@@ -1,0 +1,39 @@
+.post-contents
+  @include tablet
+    padding: 9.6rem .75rem 0 0
+    .fil-ariadna
+      transform: translateY(-19.2rem)
+    .columns
+      flex-direction: row-reverse
+      .column:first-child
+        padding: 0
+        max-width: 58rem
+        transform: translateY(-10%)
+      .column:last-child
+        padding: 0 3.2rem 0 0
+        max-width: 76rem
+
+.post-content
+  .fil-ariadna
+    padding: 2rem 0
+  h1 + p
+    font-size: 2.6rem
+    font-weight: 300
+    padding-bottom: 3rem
+  ul
+    padding-left: 2.2rem
+  li
+    list-style: disc
+  li + li
+    margin-top: 1rem
+  a
+    color:$blue
+  h1, h2, h3, h4, h5, h6
+    font-weight: 600
+    font-size: 2.2rem
+
+  @include tablet
+    img, .fluid-iframe
+      width: 140%
+      max-width: 102.4rem
+

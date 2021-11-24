@@ -1,0 +1,64 @@
+.container-taula
+  overflow: auto
+  overflow-y: hidden
+  max-width: 100%
+  .taula
+    width: 68.9rem
+    border-collapse: collapse
+    border-spacing: 0
+    color: $black
+    font-family: $family-secondary
+    font-size: 1.5rem
+    thead
+      background-color: $blue
+      color: $white
+      th
+        padding: 1.7rem 1.4rem
+        text-align: left
+        border-bottom: none
+    tbody
+      background-color: $white
+      td
+        padding: 1.7rem 1.4rem
+        text-transform: uppercase
+        border-bottom: 1px solid $blue-shade-20
+        &:first-child
+          font-weight: 600
+    @include tablet
+      width: 100%
+
+//DATA TABLE
+body
+  .dataTables_wrapper
+    background-color: $blue
+    margin-bottom: 11rem
+    padding: 0
+    .dataTables_info
+      color: $white
+      padding: 1.2rem  0 1.2rem 1.4rem
+      line-height: 2.4
+      font-weight: 600
+    .dataTables_paginate
+      padding: 1.2rem 1.4rem
+      font-weight: 600
+      .paginate_button
+        border-radius: 0
+        background: transparent
+        color: $white!important
+        border: none
+        &:hover
+          color: $blue!important
+          background: $white!important
+          border: none!important
+        &.current
+          background: $white
+          color: $blue!important
+          border: none!important
+          cursor: default
+        &.previous, &.next
+          border: none!important
+          &.disabled
+            opacity: 0
+        &+.paginate_button
+          margin-left: .5rem
+

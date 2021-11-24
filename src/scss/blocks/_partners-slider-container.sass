@@ -1,0 +1,28 @@
+.partners-slider-container
+  padding: 7rem 0
+  &>div
+    @include from($desktop)
+      background: linear-gradient(to right,  $white 0%,$white 50%, $blue-shade-10 50%)
+
+  @include tablet
+    padding: 15.7rem 0
+
+  @include until($desktop)
+    .columns
+      display: block !important
+    .column
+      display: block !important
+      flex-basis: 0 !important
+      flex-grow: 0 !important
+      flex-shrink: 0 !important
+      width: 100% !important
+      padding: .75rem
+      &+.column
+        padding-top: 8rem !important
+
+  &[data-state="reverse"]
+    .columns
+      flex-direction: row-reverse
+    &>div
+      @include from($desktop)
+        background: linear-gradient(to left,  $blue-shade-20 0%,$blue-shade-20 50%, $white 50%)

@@ -1,0 +1,118 @@
+.acc-accordion__panel {
+  display: block;
+  overflow: hidden;
+  opacity: 1;
+  //transition: visibility 0s ease, max-height .6s ease, opacity .1s ease, padding .6s;
+  max-height: 100em;
+  /* magic number for max-height = enough height */
+  visibility: visible;
+  transition-delay: 0s;
+  margin: 0;
+  padding: 0;
+
+  &[aria-hidden=true] {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    //transition-delay: .7s, .6s, .6s, .6s;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+//Connected apps
+
+[data-state="connected-apps"] {
+  .acc-accordion__panel {
+    margin: -3rem 0 4rem;
+  }
+
+  .acc-accordion__header {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 4rem;
+    font-size: 2.4rem;
+    font-family: $family-secondary;
+    font-weight: 500;
+    text-indent: -4.5rem;
+    /*
+  &[aria-expanded="false"]::before {
+    content: '+ ';
+  }
+
+  &[aria-expanded="true"]::before {
+    content: '- ';
+  }
+  */
+  }
+}
+
+// Si volem que el js-accordion__header es mostri dins els continguts comentem la següent regla
+.acc-accordion__title {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*estils capçalera*/
+.acc-accordion__header mark:hover,
+.js-accordion__header[aria-expanded="true"] mark {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 45%, $blue-light 45%, $blue-light 86%, rgba(255, 255, 255, 0) 56%);
+}
+
+
+/*per ajustar l'espai modificat per les flextes del títol*/
+[data-state="connected-apps"] {
+  transform: translateX(4.5rem);
+  width: calc(100% - 4.5rem);
+
+  @include tablet {
+    width: 100%;
+  }
+}
+
+// FAQs
+
+[data-state="faqs"] {
+  .acc-accordion__panel {
+    background: $lime;
+    padding: 0 2.4rem 0;
+    &[aria-hidden="false"] {
+      padding: 0 2.4rem 3.2rem;
+      margin: -.8rem 0 .8rem 0;
+    }
+  }
+
+  .acc-accordion__header {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background: $blue-shade-20 url(/assets/img/down.png) no-repeat right 2.4rem center;
+    border: none;
+    text-align: left;
+    padding: 2.4rem;
+    margin-bottom: .8rem;
+    font-family: $family-primary;
+    font-size: 2rem;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $lime;
+    }
+    &[aria-expanded="true"] {
+      background-color: $lime;
+      background-image: url(/assets/img/up.png);
+    }
+  }
+}

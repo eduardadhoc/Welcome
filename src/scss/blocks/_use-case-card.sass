@@ -1,0 +1,39 @@
+.use-case-card
+  background: $white
+  padding: 4.8rem 3.2rem 6rem
+  transition: $transition-standard
+  margin-bottom: 1.5rem
+  &:hover
+    background: $lime
+
+  @include tablet
+    padding: 4.8rem 6rem 6rem 4.8rem
+
+.use-case-card:not([data-state]) .is-minimal::after
+  background-color: $black
+
+.use-case-card[data-state='home']
+  background: $blue-shade-20
+  &:hover
+    background: $blue
+
+.use-case-card[data-state='carousel']
+  &:hover
+    background-color: $lila
+
+.use-case-card[data-state='home'],
+.use-case-card[data-state='carousel']
+  &:hover
+    color: $white
+    .is-minimal
+      background-image: url(assets/img/minimal-button-bg-alt.png)
+      &::before
+        background-color: $white
+      &::after
+        background-color: $white
+
+.use-case-card[data-state='carousel']
+  width: 65.6rem!important
+  height: 100%
+  @include until(700px)
+    width: 30rem!important

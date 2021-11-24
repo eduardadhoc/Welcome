@@ -1,0 +1,36 @@
+$nom: (
+  "white",
+  "black",
+  "blue",
+  "blue-light",
+  "blue-shade-10",
+  "blue-shade-20",
+  "lime",
+  "lila"
+);
+
+$valor: (
+  $white,
+  $black,
+  $blue,
+  $blue-light,
+  $blue-shade-10,
+  $blue-shade-20,
+  $lime,
+  $lila
+);
+
+$i: 1;
+
+@each $color in $nom {
+  $colorr: nth($valor, $i);
+  $i: $i+1;
+
+  .has-background-#{$color} {
+    background-color: $colorr !important;
+  }
+
+  .has-text-#{$color} {
+    color: $colorr !important;
+  }
+}

@@ -1,0 +1,50 @@
+.site-header {
+  position: fixed;
+  top: -8.6rem;
+  left: 0;
+  right: 0;
+  z-index: 9000;
+  background-color: $blue;
+  color: $white;
+  height: 8.6rem;
+  transition: $transition-standard;
+  &.visible {
+    top: 0;
+  }
+
+  @include mobile {
+    top: -8.6rem
+  }
+
+  //  @include tablet {
+  //    position: static;
+  //  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8.6rem;
+
+    .logo {
+      fill: $white
+    }
+  }
+}
+
+.nav-container {
+
+
+  .register-menu {
+    display: flex;
+    background: transparent !important;
+
+    .button {
+      height: 3.8rem;
+    }
+    li+li {
+      margin-left: 1rem;
+    }
+  }
+}
+

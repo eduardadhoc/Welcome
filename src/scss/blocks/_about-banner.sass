@@ -1,0 +1,24 @@
+.about-banner
+  background: $lime url(/assets/img/dummy-bg.png) no-repeat
+  background-size: cover
+  height: 40rem
+  @include tablet
+    height: 63.2rem
+
+.about-banner-content
+  @include desktop
+      background: linear-gradient(to right,  $blue 0%,$blue 50%, transparent 50%)
+      transform: translateY(-82%)
+      margin-bottom: -34rem
+  .columns
+    margin: 0
+  .wrapper
+    margin: 0
+    width: 100%
+    @include desktop
+      margin: 0 auto
+      width: 90%
+
+
+
+
