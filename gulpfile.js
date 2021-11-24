@@ -15,7 +15,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcss = require('gulp-postcss');
 const prettyUrl = require('gulp-pretty-url');
-const image = require('gulp-image');
+//const image = require('gulp-image');
 const nunjucksRender = require('gulp-nunjucks-render');
 const downloader = require('goog-webfont-dl');
 const browserSync = require('browser-sync').create();
@@ -106,7 +106,7 @@ function cssTask() {
     .pipe(dest('./_maqueta/'))
 }
 
-
+/*
 function imageTask() {
   return src('./src/assets/img/*', {
       allowEmpty: true
@@ -124,6 +124,7 @@ function imageTask() {
     }))
     .pipe(dest('./_maqueta/assets/img'))
 }
+*/
 
 function liveReload(done) {
   browserSync.init({
@@ -144,7 +145,7 @@ function watchFiles() {
   watch('./src/pages/**/*', series(nunjucksTask, reload));
   watch('./src/js/**/*.js', series(jsTask, reload));
   watch('./src/scss/**/*', series(cssTask, reload));
-  watch('./src/assets/img/', series(imageTask, reload));
+  //watch('./src/assets/img/', series(imageTask, reload));
 };
 
 exports.default = parallel(nunjucksTask, jsTask, cssTask, parallel(liveReload, watchFiles));
