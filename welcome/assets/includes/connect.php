@@ -7,9 +7,9 @@ $siteURL="https://dev.b2brouter.net/";
 
 //DDBB
 $bbdd_Connection="localhost";
-$bbdd_Login="dev_b2brouter_ne";
-$bbdd_Pass="iez6zahy6p";
-$bbdd_dbName="dev_b2brouter_net_db1";
+$bbdd_Login="dev2_b2brouter_n";
+$bbdd_Pass="ahsheequa8";
+$bbdd_dbName="dev2_b2brouter_net_db1";
 
 $mysqli = new mysqli($bbdd_Connection, $bbdd_Login, $bbdd_Pass, $bbdd_dbName);
 if ($mysqli->connect_errno) {
